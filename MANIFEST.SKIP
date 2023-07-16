@@ -1,0 +1,17 @@
+^.git
+^MANIFEST\.
+^Makefile$
+~$
+\.old(?:\..*)?$
+\.swp$
+\.orig$
+\.cache\.cm$
+^blib
+^util/doc
+^devel
+^autogen
+^tags$
+^Convert-Binary-C-.*\.tar\..*
+^releases
+^MYMETA.*
+.*\.o$
