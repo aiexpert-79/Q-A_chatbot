@@ -1,3 +1,0 @@
-# GCC
-gcc32_plain      =>  -- gcc -c -o %o %c
-gcc32_pack       =>  -- gcc -DPACK_PAREN -c -o %o %c

@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>HealthCare ChatBot</title> 
+  </head> 
+  <body> 
+    <h1>HealthCare ChatBot</h1> 
+    <p>Enter your symptoms (separated by commas):</p> 
+    <form method="POST"> 
+      <input type="text" name="symptoms" placeholder="Symptoms"> 
+      <button type="submit">Predict Disease</button> 
+    </form> 
+    {% if prediction %} 
+    <h2>Predicted Disease:</h2> 
+    <p>{{ prediction }}</p> 
+    <h2>Description:</h2> 
+    <p>{{ descriptions }}</p> 
+    <h2>Precautions:</h2> 
+    <ul> {% for precaution in precautions %} 
+      <li>{{ precaution }}</li> {% endfor %} 
+    </ul> {% endif %} 
+  </body> 
+</html>
